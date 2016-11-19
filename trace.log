@@ -1,0 +1,258 @@
+ ========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [access_code] => ACCESS_CODE
+    [merchant_reference] => 1122828268
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => b4707f6f735bf850189a3a4d9239a3387eae2e1836be929a91a9cac9233ecb27
+)
+
+
+========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [access_code] => ACCESS_CODE
+    [merchant_reference] => 838689416
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => fcc4e0d3939b914b6536a1ce0ea1d2fb2751e0d731b275ce1e47cde16e810b03
+)
+
+
+========================================================
+
+Fort Merchant Page Response Parameters 
+Array
+(
+    [r] => merchantPageReturn
+    [merchant_reference] => 838689416
+    [access_code] => ACCESS_CODE
+    [response_message] => Invalid merchant identifier
+    [status] => 00
+    [response_code] => 00009
+    [language] => en
+    [service_command] => TOKENIZATION
+    [signature] => fcc4e0d3939b914b6536a1ce0ea1d2fb2751e0d731b275ce1e47cde16e810b03
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+)
+
+
+========================================================
+
+Invalid Signature. Calculated Signature: fcc4e0d3939b914b6536a1ce0ea1d2fb2751e0d731b275ce1e47cde16e810b03, Response Signature: 8ce9bc7d8fd2a9839640c07f01193dec8e74bf450ada74d38c77b51b3e2215bd
+
+========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => jAEedCyb
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [merchant_reference] => 1353951965
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => dafb2b330714d0d888b12219b50f81a3821376da4c02894c73c58bab00d38ccb
+)
+
+
+========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => jAEedCyb
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [merchant_reference] => 583898239
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => 6cedb59992daa54e9f879de84786a4f6367c3102ba7cb33e36a3754605ee8e96
+)
+
+
+========================================================
+
+Fort Merchant Page Response Parameters 
+Array
+(
+    [r] => merchantPageReturn
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [card_number] => 400555******0001
+    [status] => 18
+    [response_code] => 18000
+    [token_name] => W7M8Q8wXg
+    [card_bin] => 400555
+    [service_command] => TOKENIZATION
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [merchant_reference] => 583898239
+    [response_message] => Success
+    [language] => en
+    [expiry_date] => 1705
+    [merchant_identifier] => jAEedCyb
+    [signature] => 610af0bfac2be53a7bd919ce844a3d2f39b0b81bd11396227d16a3dfc88d4fcc
+)
+
+
+========================================================
+
+Fort Host2Host Request Parameters 
+Array
+(
+    [merchant_reference] => 583898239
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [command] => AUTHORIZATION
+    [merchant_identifier] => jAEedCyb
+    [customer_ip] => 127.0.0.1
+    [amount] => 10000
+    [currency] => USD
+    [customer_email] => test@test.com
+    [customer_name] => John Doe
+    [token_name] => W7M8Q8wXg
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=processResponse
+    [signature] => bc54bbeecc64fd8f90173276535f5ccbd780452a982a3bcdd9b663ea35240daa
+)
+
+
+========================================================
+
+Fort Host2Host Response Parameters 
+Array
+(
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [eci] => ECOMMERCE
+    [status] => 20
+    [card_number] => 400555******0001
+    [fort_id] => 1470744229890
+    [3ds_url] => https://migs.mastercard.com.au/vpcpay?paymentId=3527632025112998689&DOID=3814747C5EBDB8ABAD75510C9BE834DA&o=pt&action=retry
+    [response_code] => 20064
+    [token_name] => W7M8Q8wXg
+    [customer_name] => John Doe
+    [customer_email] => test@test.com
+    [customer_ip] => 127.0.0.1
+    [currency] => USD
+    [amount] => 10000
+    [merchant_reference] => 583898239
+    [response_message] => 3-D Secure check requested
+    [command] => AUTHORIZATION
+    [payment_option] => VISA
+    [language] => en
+    [expiry_date] => 1705
+    [merchant_identifier] => jAEedCyb
+    [signature] => 2d40be4aaf9120bd59b581cd5c861614e34fb7ebc52661baca709cf95e1d300b
+)
+
+
+========================================================
+
+Fort Merchant Page Host2Hots Response Parameters 
+Array
+(
+    [r] => merchantPageReturn
+    [access_code] => Nlni5fXQzbePMvLOgndc
+    [card_number] => 400555******0001
+    [status] => 18
+    [response_code] => 18000
+    [token_name] => W7M8Q8wXg
+    [card_bin] => 400555
+    [service_command] => TOKENIZATION
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [merchant_reference] => 583898239
+    [response_message] => Success
+    [language] => en
+    [expiry_date] => 1705
+    [merchant_identifier] => jAEedCyb
+    [signature] => 610af0bfac2be53a7bd919ce844a3d2f39b0b81bd11396227d16a3dfc88d4fcc
+)
+
+
+========================================================
+
+Redirect to 3DS URL : https://migs.mastercard.com.au/vpcpay?paymentId=3527632025112998689&DOID=3814747C5EBDB8ABAD75510C9BE834DA&o=pt&action=retry
+
+========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [access_code] => ACCESS_CODE
+    [merchant_reference] => 172385315
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => 7a08863b1b791d6c8ecfbe233dda17a0ab872ea88edcbbce7f8b340c7ee5344c
+)
+
+
+========================================================
+
+Fort Merchant Page Request Parameters 
+Array
+(
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [access_code] => ACCESS_CODE
+    [merchant_reference] => 1210699165
+    [service_command] => TOKENIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=merchantPageReturn
+    [signature] => 7849fa5a203916252ce0d4333203416e620c25e8c0e23e2dc827f7bd63d73b61
+)
+
+
+========================================================
+
+Fort Redirect Request Parameters 
+Array
+(
+    [amount] => 10000
+    [currency] => USD
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+    [access_code] => ACCESS_CODE
+    [merchant_reference] => 1030869351
+    [customer_email] => test@payfort.com
+    [command] => AUTHORIZATION
+    [language] => en
+    [return_url] => http://localhost/payfortIntegration/route.php?r=processResponse
+    [signature] => 6f1d4ef4c494d5747d062938e414a4e78acdcb44d0db58807127b71b164f5b67
+)
+
+
+========================================================
+
+Fort Redirect Response Parameters 
+Array
+(
+    [r] => processResponse
+    [access_code] => ACCESS_CODE
+    [status] => 00
+    [eci] => ECOMMERCE
+    [response_code] => 00009
+    [customer_email] => test@payfort.com
+    [customer_ip] => 93.95.204.106
+    [currency] => USD
+    [merchant_reference] => 1030869351
+    [amount] => 10000
+    [response_message] => Invalid merchant identifier
+    [command] => AUTHORIZATION
+    [language] => en
+    [signature] => 6f1d4ef4c494d5747d062938e414a4e78acdcb44d0db58807127b71b164f5b67
+    [merchant_identifier] => MERCHANT_IDENTIFIER
+)
+
+
+========================================================
+
+Invalid Signature. Calculated Signature: 6f1d4ef4c494d5747d062938e414a4e78acdcb44d0db58807127b71b164f5b67, Response Signature: cf30da04ba582df99653b3d7b1a2b1d6d7808a056ca5ad7dbd70868de97f164c
+

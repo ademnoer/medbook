@@ -1,0 +1,15 @@
+#logo::before {
+    background-image: url("../img/logos/medbook-logo.png");
+}
+#logo {
+    height: 53px;
+    margin-left: 17.5px !important;
+    top: 4px;
+    width: 53px;
+}
+#amino-menu-logo {
+    background-image: url("../img/logos/medbook-logo.png");
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 61px;
+}
